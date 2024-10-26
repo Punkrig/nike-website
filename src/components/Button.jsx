@@ -1,6 +1,6 @@
 
 const Button = ({label,iconUrl, backgroundColor,
-  textColor, borderColor
+  textColor, borderColor, fullWidh
 }) => {
   return (
     <button className={`flex
@@ -11,7 +11,7 @@ const Button = ({label,iconUrl, backgroundColor,
       backgroundColor
       ? `${backgroundColor} ${textColor} ${borderColor}`
       :"bg-coral-red  border-coral-red text-white"
-    } rounded-full "}`}
+    } rounded-full ${fullWidh && 'w-full'}"}`}
     >
         {label}
 
